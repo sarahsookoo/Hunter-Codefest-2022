@@ -1,0 +1,45 @@
+<!-- <p>this is game 1</p>  -->
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Game 1 </title>
+
+</head>
+
+<link href="game1.css" rel="stylesheet">
+<script src="game1.js" type="text/javascript"> </script>
+
+
+<body style="text-align: center;">
+
+    <h1>Code Memory Game</h1>
+    <h4>
+        In this game, you will be shown a code.
+        You will have to click either seen or not seen. If you are wrong, you get a strike!
+        If you are correct, more codes get added. How many codes can you keep track of
+        before you hit 3 strikes?
+    </h4>
+    <br></br>
+
+    <input type="button" class="button" onclick="displayNum1(); setTimeout(unHideInput, 1)" value="Click here to start!">
+
+    <p style="font-size: xx-large;" id="numberDisplay"></p>
+
+    <div class="inputbox" style="visibility: hidden;">
+
+        <p id="message"> </p>
+        <p id="num"> </p>
+
+        Have you seen this word so far?
+        <input type="button" class="button" onclick="seen();" value="Seen">
+
+        <input type="button" class="button" onclick="notSeen();" value="Not Seen">
+
+    </div>
+    <p id="num"> </p>
+    <p id="messagee"> </p>
+
+</body>

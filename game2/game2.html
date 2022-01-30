@@ -1,0 +1,51 @@
+<!-- <p>this is game 2</p>  -->
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Game 2 </title>
+
+</head>
+
+<link href="game2.css" rel="stylesheet">
+<script src="game2.js" type="text/javascript"> </script>
+
+
+<body style="text-align: center;">
+
+    <h1>Number Memory Game</h1>
+    <h4>In this game, you will be shown a number for 3 seconds and then it will disappear.
+        You will have to type the number accurately in the input box. The numbers will progressively get longer. This
+        will test your short term memory.</h4>
+    <br></br>
+
+    <!-- <div id="start"> -->
+        <input id = "start" type="button" class="button" onclick="displayNum(); setTimeout(unHideInput, 3000); disableStart();"
+            value="Click here to start!">
+    <!-- </div> -->
+    
+    <p style="font-size: xx-large;" id="numberDisplay"></p>
+
+    <div class="inputbox" style="visibility: hidden;">
+
+        Enter the number that was displayed: <input type="text" id="answer" name="ans">
+
+        <input type="button" class="button"
+            onclick="checkAns(); unHideGrade(); document.getElementById('answer').value = ''" value="Enter">
+    </div>
+
+    <div class="grade">
+        <p id="grade"> </p>
+    </div>
+
+
+    <div class="nextbutton" style="visibility: hidden;">
+        <input type="button" class="button" onclick="nextChar(); hideNext(); hideInput(); hideGrade();" value="Next">
+    </div>
+
+
+
+
+</body>

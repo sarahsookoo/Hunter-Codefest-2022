@@ -1,0 +1,45 @@
+body{
+    font-size:large;
+    background-color: rgb(91 126 175);
+}
+
+h1 {
+    color: #d55b3e;
+    font-size: 60px;
+    margin: 0;
+    background-color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+h4 {
+    margin: 0;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.button{
+    font-size: large;
+}
+
+#numberDisplay{
+    /* visibility: visible; */
+    animation-name: hide;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes hide{
+    100%{
+        color: rgb(250, 219, 179);;
+        /* font-size: x-small; */
+    }
+}
+
+#num span {
+    background-color: yellow;
+}

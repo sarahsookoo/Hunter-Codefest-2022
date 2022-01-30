@@ -1,0 +1,55 @@
+<!-- <p>this is game 5</p>  -->
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Game 5 </title>
+
+</head>
+
+<link href="game5.css" rel="stylesheet">
+<script src="game5.js" type="text/javascript"> </script>
+
+
+<body style="text-align: center;">
+
+    <h1>Create the Number Game</h1>
+    <h4>
+        In this game, you will be given 5 numbers.
+        You will have to use all of the first 4 numbers along with the five mathematical operations (+, -, * , /, %) to create the final number.
+        Enter the solution in the order it should be solved in without parentheses and with spaces in between
+        each number and operation. Try to solve them as fast as possible, while also not getting it wrong, as that adds a 10 second penalty. How fast can you correctly solve 4 problems?
+    </h4>
+    <br></br>
+
+    <input type="button" class="button" onclick="displayNum1(); setTimeout(unHideInput, 1)" value="Click here to start!">
+
+    <p style="font-size: xx-large;" id="numberDisplay"></p>
+
+    <div class="inputbox" style="visibility: hidden;">
+
+        <p id="message"> </p>
+        <p id="num"> </p>
+
+        <input type="text" id="answer" name="ans">
+        <input type="button" class="button" onclick="enter(); document.getElementById('answer').value = ''" value="Enter">
+
+        <script>
+            var input = document.getElementById("answer");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    enter();
+                    document.getElementById('answer').value = '';
+                }
+            });
+        </script>
+
+    </div>
+
+    <p id="num"> </p>
+    <p id="message"> </p>
+
+</body>

@@ -1,0 +1,46 @@
+body {
+    background-color: #fcf4d9;
+    text-align: center;
+}
+
+h1 {
+    color: #d55b3e;
+    font-size: 90px;
+    margin: 0;
+    background-color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+h2 {
+    margin: 0;
+    background-color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+h3 {
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.button {
+    margin: .05in;
+    background: url(codememory1.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    background-color: #8ed2c9;
+    width: 25%;
+    height: 3.5in;
+    white-space: normal;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+    background-color: #d55b3e;
+}
+
+
